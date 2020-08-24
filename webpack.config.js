@@ -8,7 +8,7 @@ const outputFile = `${libraryName}.min.js`;
 
 
 module.exports = {
-  entry: './index.js',
+  entry: './src/index.js',
   output: {
     library: libraryName,
     libraryTarget: 'umd',
@@ -27,24 +27,6 @@ module.exports = {
           },
         }, ],
       },
-/*       {
-        test: /\.scss$/,
-        use: [
-          'css-loader',
-          'postcss-loader',
-          'sass-loader',
-        ],
-      },
-      {
-        test: /\.(png|jp(e*)g|svg)$/,
-        use: [{
-          loader: 'url-loader',
-          options: {
-            limit: 20000, // Convert images < 8kb to base64 strings
-            name: 'img/[hash]-[name].[ext]',
-          },
-        }],
-      }, */
     ],
   },
   plugins: [
